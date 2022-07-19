@@ -14,4 +14,5 @@ public static String LOGIN_USER         = protocol + hostname +"login_user.php";
     public static String shared_nama;
     public static String shared_foto;
     public static String shared_fix;
+    public static String shared_foto_fix;
 }

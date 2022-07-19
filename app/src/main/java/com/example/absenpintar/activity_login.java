@@ -134,6 +134,7 @@ public class activity_login extends AppCompatActivity {
                             editor.putString("shared_nama",nama);
                             editor.putString("shared_foto",foto);
                             editor.putString("shared_fix",nidn_z+"#"+nama);
+                            editor.putString("shared_foto_fix","http://192.168.100.12/adminWeb/file/"+foto);
                             editor.apply();
 
                             new CountDownTimer(2500, 4000) {

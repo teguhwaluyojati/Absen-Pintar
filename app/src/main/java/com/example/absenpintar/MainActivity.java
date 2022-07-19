@@ -15,12 +15,14 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {
 
     ImageButton btn_masuk, btn_keluar, btn_izin, btn_riwayat, btn_lainyna;
     Dialog dialog;
     TextView tvNama, tvNo, tvFoto;
+    ImageView imgView;
 
     SharedPreferences sharedPreferences;
 
@@ -34,12 +36,16 @@ public class MainActivity extends AppCompatActivity {
         btn_riwayat = findViewById(R.id.btn_riwayat);
         tvNama = findViewById(R.id.tv_nama);
         tvNo = findViewById(R.id.tv_nidn);
+        imgView = findViewById(R.id.id_foto);
+        tvFoto = findViewById(R.id.tv_fix_foto);
 
         dialog=new Dialog(this);
 
         sharedPreferences = getSharedPreferences("absen.conf", MODE_PRIVATE);
         tvNama.setText(sharedPreferences.getString("shared_nama",null));
         tvNo.setText(sharedPreferences.getString("shared_nidn",null));
+        tvFoto.setText(sharedPreferences.getString("shared_foto_fix", null));
+
 
 
         //Aksi Klik Masuk
@@ -72,6 +78,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        Picasso.get()
+                .load(tvFoto.getText().toString())
+                .into(imgView);
+
     }
 
 
