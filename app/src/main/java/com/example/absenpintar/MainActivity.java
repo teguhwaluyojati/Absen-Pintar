@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         btn_lainyna = findViewById(R.id.btn_lainnya);
         tvNama = findViewById(R.id.tv_nama);
         tvNo = findViewById(R.id.tv_nidn);
-        tvFoto = findViewById(R.id.tvFoto);
 
         dialog=new Dialog(this);
 
@@ -50,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                openMasukDialog();
+                startActivity(new Intent(MainActivity.this, QRCode.class));
 
             }
         });
@@ -60,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                openKeluarDialog();
+                startActivity(new Intent(MainActivity.this, QRCode.class));
 
             }
         });
@@ -71,30 +70,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(MainActivity.this, QRCode.class));
+
 
             }
         });
 
     }
 
-        private void openLainnyaDialog () {
-        }
+
 
         private void openRiwayatDialog () {
-            Intent intent = new Intent(this, riwayatIzinActivity.class);
-            startActivity(intent);
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://192.168.100.12/userWeb/"));
+            startActivity(browserIntent);
         }
 
-
-        private void openKeluarDialog () {
-        }
-
-        private void openMasukDialog () {
-
-            dialog.setContentView(R.layout.masuk_layout);
-            dialog.show();
-
-        }
     }
 

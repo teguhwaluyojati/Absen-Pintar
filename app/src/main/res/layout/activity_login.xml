@@ -20,7 +20,17 @@
         app:layout_constraintBottom_toBottomOf="@+id/btn_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_masuk"/>
+        app:layout_constraintTop_toTopOf="@+id/tv_masuk">
+
+        <RelativeLayout
+            android:id="@+id/loading_screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:background="#000">
+
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/tv_masuk"
@@ -105,10 +115,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textinput_password_login" />
 
-    <RelativeLayout
-        android:id="@+id/loading_screen"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:alpha="0"
-        android:background="#000" />
 </androidx.constraintlayout.widget.ConstraintLayout>
