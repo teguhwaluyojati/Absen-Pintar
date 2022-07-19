@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Teguh Waluyojati/Downloads/Compressed/absenPintar/absenPintar/app/src/main/res/drawable-anydpi/ic_action_keluar.xml" value="0.163" />
+        <entry key="..\:/Users/Teguh Waluyojati/Downloads/Compressed/absenPintar/absenPintar/app/src/main/res/drawable/shape2.xml" value="0.163" />
+        <entry key="..\:/Users/Teguh Waluyojati/Downloads/Compressed/absenPintar/absenPintar/app/src/main/res/layout/activity_izin.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/Teguh Waluyojati/Downloads/Compressed/absenPintar/absenPintar/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/Teguh Waluyojati/Downloads/Compressed/absenPintar/absenPintar/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Teguh Waluyojati/Downloads/Compressed/absenPintar/absenPintar/app/src/main/res/layout/activity_qrcode.xml" value="0.264" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/drawable-anydpi/ic_action_izin.xml" value="0.1425" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/drawable-anydpi/ic_action_keluar.xml" value="0.1425" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/drawable-anydpi/ic_action_masuk.xml" value="0.1425" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/drawable-anydpi/ic_action_riwayat.xml" value="0.1425" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/drawable/btn_bulat.xml" value="0.1425" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/drawable/btn_masuk.xml" value="0.1425" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/drawable/bulat_biru.xml" value="0.1425" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/drawable/bulat_hijau.xml" value="0.1425" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/drawable/bulat_kuning.xml" value="0.1425" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/drawable/header_izin.xml" value="0.1425" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/drawable/shape.xml" value="0.1555" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/drawable/shape1.xml" value="0.1555" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/drawable/shape2.xml" value="0.1425" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/drawable/stroke_hitam.xml" value="0.1425" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/layout/activity_izin.xml" value="0.33" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/layout/activity_riwayat_izin.xml" value="0.25" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/layout/activity_signup.xml" value="0.22" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/layout/dropdown_item.xml" value="0.1717948717948718" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/layout/izin_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/layout/masuk_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Teguh/AndroidStudioProjects/absenPintar/app/src/main/res/xml/network_security_config.xml" value="0.1717948717948718" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

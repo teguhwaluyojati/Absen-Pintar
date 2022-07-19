@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/shape1"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_masuk"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/btn_bulat"
+            android:src="@drawable/ic_action_masuk"
+            app:layout_constraintEnd_toStartOf="@+id/btn_keluar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_keluar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/btn_bulat"
+            android:src="@drawable/ic_action_keluar"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_masuk"
+            app:layout_constraintEnd_toStartOf="@+id/btn_riwayat"
+            app:layout_constraintStart_toEndOf="@+id/btn_masuk"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_riwayat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/btn_bulat"
+            android:src="@drawable/ic_action_riwayat"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_keluar"
+            app:layout_constraintEnd_toStartOf="@+id/btn_lainnya"
+            app:layout_constraintStart_toEndOf="@+id/btn_keluar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_lainnya"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/btn_bulat"
+            android:src="@drawable/ic_action_lainya"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_riwayat"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/tv_masuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Masuk"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_masuk"
+            app:layout_constraintStart_toStartOf="@+id/btn_masuk"
+            app:layout_constraintTop_toBottomOf="@+id/btn_masuk" />
+
+        <TextView
+            android:id="@+id/tv_keluar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Pulang"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_keluar"
+            app:layout_constraintStart_toStartOf="@+id/btn_keluar"
+            app:layout_constraintTop_toBottomOf="@+id/btn_keluar" />
+
+        <TextView
+            android:id="@+id/tv_riwayat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Riwayat Absen"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_riwayat"
+            app:layout_constraintStart_toStartOf="@+id/btn_riwayat"
+            app:layout_constraintTop_toBottomOf="@+id/btn_riwayat" />
+
+        <TextView
+            android:id="@+id/tv_lainnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Lainnya"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_lainnya"
+            app:layout_constraintStart_toStartOf="@+id/btn_lainnya"
+            app:layout_constraintTop_toBottomOf="@+id/btn_lainnya" />
+
+        <TextView
+            android:id="@+id/tvFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="147dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="140dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_riwayat" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="-15dp"
+        android:background="@drawable/shape"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <TextView
+            android:id="@+id/tv_halo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Halo,"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Teguh Waluyojati"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_halo" />
+
+        <TextView
+            android:id="@+id/tv_nidn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape2"
+            android:fontFamily="@font/poppins_medium"
+            android:text="111222"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="43dp"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/id_foto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/teguhwaluyojati" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

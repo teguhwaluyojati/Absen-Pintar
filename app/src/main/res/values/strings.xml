@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">absenPintar</string>
+    <string name="col1">Izin Untuk</string>
+    <string name="qr_code"></string>
+<string name="enter_the_text_here"></string>
+    <string name="todo"></string>
+    <string-array name="izin_untuk">
+        <item>Tidak Dibayar</item>
+        <item>Dibayar Setengah</item>
+    </string-array>
+
+    <string-array name="alasan_izin">
+        <item>Cuti</item>
+        <item>WFH(Sakit)</item>
+    </string-array>
+</resources>

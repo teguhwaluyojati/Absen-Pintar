@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/shape1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Menampilkan Tanggal Yang Dipilih"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <TextView
+            android:id="@+id/tv_pilih_tgl_izin"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="112dp"
+            android:layout_marginEnd="112dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Pilih Tanggal Izin"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <CalendarView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:selectedWeekBackgroundColor="@color/teal_200" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:layout_marginTop="51dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/header_izin"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingTop="12dp"
+            android:text="Rencana Izin"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_izin_untuk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_izin_untuk"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/stroke_hitam"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="10dp"
+            android:text="Izin Untuk"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/textInputLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="191dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="-6dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_izin_untuk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_izin_untuk"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:text="Pilih"
+                android:textSize="14dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_alasan_izin"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="@drawable/stroke_hitam"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="10dp"
+            android:text="Alasan Izin"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/textInputLayout2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_izin_untuk" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="191dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="-7dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_alasan_izin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_alasan_izin"
+            app:layout_constraintTop_toBottomOf="@+id/tv_izin_untuk">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:text="Pilih"
+                android:textSize="14dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-5dp"
+        android:background="@color/purple_200"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/tv_absen_izin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="176dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Absen Izin"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
