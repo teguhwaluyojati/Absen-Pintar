@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         btn_masuk = findViewById(R.id.btn_masuk);
         btn_keluar = findViewById(R.id.btn_keluar);
         btn_riwayat = findViewById(R.id.btn_riwayat);
-        btn_lainyna = findViewById(R.id.btn_lainnya);
         tvNama = findViewById(R.id.tv_nama);
         tvNo = findViewById(R.id.tv_nidn);
 
@@ -41,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
         sharedPreferences = getSharedPreferences("absen.conf", MODE_PRIVATE);
         tvNama.setText(sharedPreferences.getString("shared_nama",null));
         tvNo.setText(sharedPreferences.getString("shared_nidn",null));
-        tvFoto.setText(sharedPreferences.getString("shared_foto", null));
 
 
         //Aksi Klik Masuk
@@ -64,25 +62,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        //Aksi Klik lainnya
-        btn_lainyna.setOnClickListener(new View.OnClickListener() {
+        //Aksi Daftar Riwayat Absen
+        btn_riwayat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
-
+                String url = "http://192.168.100.12/userWeb/";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
             }
         });
 
+
     }
 
-
-
-        private void openRiwayatDialog () {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://192.168.100.12/userWeb/"));
-            startActivity(browserIntent);
-        }
 
     }
 
