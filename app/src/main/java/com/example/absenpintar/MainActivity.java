@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     Dialog dialog;
     TextView tvNama, tvNo, tvFoto;
     ImageView imgView;
-
     SharedPreferences sharedPreferences;
 
     @Override

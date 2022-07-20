@@ -31,9 +31,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".riwayatIzinActivity"
-            android:exported="true" />
-        <activity
             android:name=".IzinActivity"
             android:exported="true" />
         <activity
